@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+      <!-- Noah Canepa, this is my own work -->
+      <body style= "background:#fff8e3;">
+      	<h1> Finished!</h1>
+      	<p>First Name : #{user.firstName}</p>
+      	<p>Last Name : #{user.lastName}</p>
+      	<p>Email : #{user.email}</p>
+      	<p>Phone Number : #{user.phoneNumber}</p>
+      	<p>UserName : #{user.username}</p>
+      	<p>Password : #{user.password}</p>
+      	<p> Click "Next" to view your orders.</p>
+      	<h:form>
+      		<h:commandButton action="#{formController.onSubmit()}" value="Next" />
+      	</h:form>
+      </body>
+</html>
